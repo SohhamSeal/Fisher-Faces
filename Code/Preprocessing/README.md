@@ -1,5 +1,8 @@
 # Celebrity Face Image Dataset Processing
 
+> [!NOTE]  
+> The preprocessing step is optional, depending on the type of available data. Proceeding without preprocessing is feasible, but it's essential to note that skipping this step may lead to a notable decrease in accuracy.
+
 ## Overview
 
 This repository presents a comprehensive solution for the streamlined processing of a celebrity face image dataset, specifically the [Celebrity Face Image Dataset on Kaggle](https://www.kaggle.com/datasets/vishesh1412/celebrity-face-image-dataset). Similar to many other datasets, this collection features images of celebrities captured in diverse poses and backgrounds, necessitating a focused approach towards the Region Of Interest (ROI) for precise facial analysis.
@@ -37,19 +40,6 @@ The Haar Cascade operates using a sliding window approach, systematically moving
 ### Implementation in This Solution
 
 The Haar Cascade is utilized to detect faces in images, providing a list of rectangular box coordinates representing the ROI. These coordinates are then used to crop the images, creating a new dataset that focuses solely on the facial region of celebrities. This refined dataset can be leveraged for various facial recognition and classification tasks.
-
-### Implementation in This Solution
-
-
-## Getting Started
-
-To execute this task, follow these steps:
-
-1. Clone this repository to your local machine.
-2. Ensure you have Python installed on your system.
-3. Install the required libraries by running `pip install -r requirements.txt`.
-4. Run the `init.py` script.
-5. Enter the relative or absolute location of the dataset and the location where you want to save the processed files when prompted.
 
 ## Acknowledgments
 
