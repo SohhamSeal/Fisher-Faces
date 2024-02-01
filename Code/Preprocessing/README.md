@@ -1,7 +1,7 @@
 # Celebrity Face Image Dataset Processing
 
 > [!NOTE]  
-> The preprocessing step is optional, depending on the type of available data. Proceeding without preprocessing is feasible, but it's essential to note that skipping this step may lead to a notable decrease in accuracy.
+> This preprocessing step is optional, depending on the type of available data. Proceeding without preprocessing is feasible, but it's essential to note that skipping this step may lead to a notable decrease in accuracy.
 
 ## Overview
 
