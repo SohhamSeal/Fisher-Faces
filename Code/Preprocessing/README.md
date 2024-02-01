@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository provides a solution for efficiently processing a celebrity face image dataset, specifically the [Celebrity Face Image Dataset on Kaggle](https://www.kaggle.com/datasets/vishesh1412/celebrity-face-image-dataset). The dataset, like many others, contains images of celebrities with various poses and backgrounds, making it essential to focus on the Region Of Interest (ROI) for accurate facial analysis.
+This repository presents a comprehensive solution for the streamlined processing of a celebrity face image dataset, specifically the [Celebrity Face Image Dataset on Kaggle](https://www.kaggle.com/datasets/vishesh1412/celebrity-face-image-dataset). Similar to many other datasets, this collection features images of celebrities captured in diverse poses and backgrounds, necessitating a focused approach towards the Region Of Interest (ROI) for precise facial analysis.
+
+However, it's crucial to note that the considerations for ROI become particularly pertinent in scenarios resembling the dataset's structure. In cases where images resemble mugshots or follow a similar pattern, such as passport photos, the need for meticulous ROI analysis is less pronounced. These images are inherently well-curated, typically comprising 80-85% of the entire frame dedicated solely to the face. In such instances, the conventional concerns regarding diverse poses and backgrounds become less relevant, simplifying the facial analysis process.
 
 ## Problem Statement
 
@@ -12,9 +14,7 @@ The challenge arises due to the dataset's inclusion of images that extend beyond
 
 To address this issue, the repository employs a Region Of Interest (ROI) capturing algorithm, specifically the Haar Cascade, which is implemented using the OpenCV library in Python. The Haar Cascade is a powerful template matching technique for object detection, widely used in computer vision applications.
 
-### Haar Cascade in Facial Recognition: A Comprehensive Overview
-
-#### Introduction
+### Introduction to Haar Cascade ([see](https://github.com/opencv/opencv/tree/master/data/haarcascades))
 
 The Haar Cascade is a robust object detection algorithm widely applied in computer vision, specifically renowned for its efficacy in facial recognition tasks. Developed by Viola and Jones, the algorithm is grounded in the concept of Haar-like features, which are essentially local intensity variations in an image.
 
@@ -34,13 +34,12 @@ Integral Image, a crucial component of the Haar Cascade, facilitates rapid compu
 
 The Haar Cascade operates using a sliding window approach, systematically moving across the image at different scales. At each position, the cascade of classifiers assesses whether the region within the sliding window contains the target object. If a region fails a classifier, it is promptly discarded, optimizing computation. Successful regions proceed through the cascade until the final classifier, determining whether the region contains the desired object.
 
-#### Facial Recognition Applications
-
-In facial recognition, Haar Cascade is instrumental in detecting faces within images. Its adaptability to various environments, robustness against occlusions, and speed make it an ideal choice for real-time applications. However, it's essential to acknowledge that while Haar Cascade excels in detecting frontal faces, its performance may diminish with non-frontal poses or variations in lighting conditions.
-
 ### Implementation in This Solution
 
 The Haar Cascade is utilized to detect faces in images, providing a list of rectangular box coordinates representing the ROI. These coordinates are then used to crop the images, creating a new dataset that focuses solely on the facial region of celebrities. This refined dataset can be leveraged for various facial recognition and classification tasks.
+
+### Implementation in This Solution
+
 
 ## Getting Started
 
