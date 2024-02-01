@@ -41,7 +41,7 @@ The Haar Cascade operates using a sliding window approach, systematically moving
 
 The Haar Cascade is utilized to detect faces in images, providing a list of rectangular box coordinates representing the ROI. These coordinates are then used to crop the images, creating a new dataset that focuses solely on the facial region of celebrities. This refined dataset can be leveraged for various facial recognition and classification tasks.
 
-### HAAR Cascade Limitations
+#### HAAR Cascade Limitations
  
 While HAAR Cascade filtering is effective, it is not infallible. In some cases, the cascade may fail to accurately crop only the facial region. It might mistakenly identify small facial features as a complete face and crop accordingly.
 
