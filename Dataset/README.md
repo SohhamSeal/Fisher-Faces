@@ -29,6 +29,6 @@ This dataset has been sourced from [Kaggle's collection of celebrity faces](http
 The original dataset contains images with improperly cropped faces, as shown below:
 
 ![Improperly Cropped Face #1](https://github.com/SohhamSeal/Fisher-Faces/blob/main/Dataset/Celebrity%20Faces%20Dataset/Denzel%20Washington/007_1f6f632a.jpg?raw=true)
-![Improperly Cropped Face #2](https://github.com/SohhamSeal/Fisher-Faces/tree/modify/Dataset/Celebrity Faces Dataset/Jennifer Lawrence/067_2cd39306.jpg?raw=true)
+![Improperly Cropped Face #2](https://github.com/SohhamSeal/Fisher-Faces/blob/main/Dataset/Celebrity%20Faces%20Dataset/Jennifer%20Lawrence/067_2cd39306.jpg?raw=true)
 
 To address this, the dataset needs to be cropped to focus solely on the facial features. Manual cropping is accurate but tedious. Therefore, we utilize the HAAR Cascade library to identify facial markers for template matching. Subsequently, we crop the images and save them in a separate location uing the [ROI code](Code\Preprocessing\init.py). You can find it in this [folder](Code\Preprocessing).
