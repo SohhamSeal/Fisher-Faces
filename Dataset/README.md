@@ -22,9 +22,9 @@ This dataset has been sourced from [Kaggle's collection of celebrity faces](http
 - Tom Hanks
 - Will Smith
 
-## Dataset Preprocessing
+## Dataset Preprocessing (optional)
 
-### Face Cropping
+### Face Cropping using [ROI code](Code\Preprocessing\init.py)
 
 The original dataset contains images with improperly cropped faces, as shown below:
 
